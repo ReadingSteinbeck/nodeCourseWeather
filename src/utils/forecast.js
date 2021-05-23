@@ -15,7 +15,7 @@ const forecast = (lat, lng, callback) => {
         // weatherDescriptions: body.current.weather_descriptions[0],
         // temperature: body.current.temperature,
         // feelslike: body.current.feelslike,
-        `${body.current.weather_descriptions[0]}, It is currently ${body.current.temperature} degrees but feels like ${body.current.feelslike}`
+        `${body.current.weather_descriptions[0]}, It is currently ${body.current.temperature} degrees but feels like ${body.current.feelslike}. The current wind speed is ${body.current.wind_speed} with a wind degree of ${body.current.wind_degree} at a direction of ${body.current.wind_dir}`
       );
     }
   });
